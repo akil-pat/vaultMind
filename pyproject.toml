@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vaultmind"
+version = "0.1.0"
+description = "An agentic RAG assistant that chats with your own notes — local embeddings, cited answers, no cloud vector DB."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Zulfiqar Tilal" }]
+keywords = ["rag", "agent", "claude", "llm", "knowledge-base", "notes"]
+dependencies = [
+    "anthropic>=0.68.0",
+    "sentence-transformers>=3.0.0",
+    "lancedb>=0.15.0",
+    "typer>=0.12.0",
+    "rich>=13.7.0",
+    "pydantic>=2.7.0",
+    "pypdf>=4.2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.6.0",
+]
+
+[project.scripts]
+vaultmind = "vaultmind.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/vaultmind"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
