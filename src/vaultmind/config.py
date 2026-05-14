@@ -12,6 +12,7 @@ class Settings:
     embedding_model: str = "all-MiniLM-L6-v2"
     chat_model: str = "claude-opus-5"
     effort: str = "medium"
+    max_tokens: int = 4096
     chunk_words: int = 220
     chunk_overlap_words: int = 40
     top_k: int = 6
