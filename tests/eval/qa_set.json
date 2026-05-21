@@ -1,0 +1,37 @@
+[
+  {
+    "question": "Why did I choose LanceDB instead of a hosted vector database?",
+    "expected_path": "rag-architecture.md",
+    "expected_keyword": "embedded"
+  },
+  {
+    "question": "What embedding model am I using and why did I pick it?",
+    "expected_path": "rag-architecture.md",
+    "expected_keyword": "MiniLM"
+  },
+  {
+    "question": "Should the agent search my notes on every single message?",
+    "expected_path": "rag-architecture.md",
+    "expected_keyword": "general knowledge"
+  },
+  {
+    "question": "What book am I reading about distributed systems and consensus?",
+    "expected_path": "reading-list.md",
+    "expected_keyword": "Data-Intensive"
+  },
+  {
+    "question": "What search technique paper is on my to-read list?",
+    "expected_path": "reading-list.md",
+    "expected_keyword": "hybrid search"
+  },
+  {
+    "question": "What did we decide about the mobile app rewrite in Q3 planning?",
+    "expected_path": "meeting-notes.md",
+    "expected_keyword": "postpone"
+  },
+  {
+    "question": "Who owes me the churn analysis deck and by when?",
+    "expected_path": "meeting-notes.md",
+    "expected_keyword": "Sarah"
+  }
+]
